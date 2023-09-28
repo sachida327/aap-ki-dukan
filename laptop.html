@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WELCOME TO CART AND PURCHASE</title>
+    <style>
+        /*navigation*/
+        #bar {
+            display: flex;
+            align-items: center;
+
+        }
+
+        /*logo and image*/
+        #bar img {
+            height: 60px;
+            margin: 30px 45px;
+        }
+
+        #bar ul {
+            display: flex;
+            flex-direction: row;
+            font-size: 15px;
+
+        }
+
+        #bar::before {
+            content: "";
+            background-color: rgba(0, 0, 0, 0);
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+
+
+        }
+
+        #bar ul li {
+            list-style: none;
+
+            padding: 10px;
+
+
+
+        }
+
+        #bar {
+            position: relative;
+        }
+
+        #bar ul li a {
+            display: flex;
+            padding: 4px 23px;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            border: 3px solid black;
+            border-radius: 10px;
+
+        }
+
+        #bar {
+            position: relative;
+        }
+
+        #bar ul li a:hover {
+
+            background-color: antiquewhite;
+            color: black;
+
+
+        }
+
+        body {
+            background-color: bisque;
+        }
+
+        button {
+            border: 3px solid black;
+            border-radius: 10px;
+            background-color: rgb(252, 199, 108);
+        }
+
+        .brand {
+            border: 3px solid black;
+            border-radius: 10px;
+            background-color: rgb(244, 216, 243);
+        }
+
+        .brand img {
+            height: 200px;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        section #contact {
+            position: relative;
+        }
+
+        section #contact {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: url('contact.jpg') no-repeat center/cover;
+
+        }
+
+        footer {
+            background-color: #000000;
+            color: aliceblue;
+            padding: 10px 20px;
+            text-align: center;
+            margin: 10px;
+            font-size: 18px;
+        }
+
+        .form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 14px;
+        }
+
+        #contb {
+            background: url('contact.jpg') no-repeat center/cover;
+            width: 100%;
+            height: 100%;
+            border: 3px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        header {
+            display: flex;
+            border: 5px solid rgb(139, 224, 238);
+            border-radius: 10px;
+
+
+        }
+
+        header p {
+            font-size: 25px;
+
+            text-align: center;
+
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .box {
+            display: flex;
+            width: 1400px;
+            height: 1800px;
+            margin: 25px;
+            padding: 20px;
+            border: 4px solid black;
+            border-radius: 10px;
+            display: grid;
+            grid-template-columns: 400px 400px 400px;
+
+            grid-template-rows: auto;
+            justify-content: center;
+            text-align: center;
+
+
+
+        }
+
+        .mob1 {
+            border: 2px solid blue;
+            justify-content: center;
+            text-align: center;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 10px;
+            background-color: rgba(147, 195, 219, 0.66)
+        }
+
+        .mob1 img {
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+
+        body {
+            background-color: bisque;
+        }
+
+        button {
+            border: 3px solid black;
+            border-radius: 10px;
+            background-color: rgb(252, 199, 108);
+        }
+
+        .brand {
+            border: 3px solid black;
+            border-radius: 10px;
+            background-color: rgb(244, 216, 243);
+        }
+
+        .brand img {
+            height: 200px;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        section #contact {
+            position: relative;
+        }
+
+        section #contact {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: url('contact.jpg') no-repeat center/cover;
+
+        }
+
+        footer {
+            background-color: #000000;
+            color: aliceblue;
+            padding: 10px 20px;
+            text-align: center;
+            margin: 10px;
+            font-size: 18px;
+        }
+
+        .form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 14px;
+        }
+
+        #contb {
+            background: url('contact.jpg') no-repeat center/cover;
+            width: 100%;
+            height: 100%;
+            border: 3px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        header {
+            display: flex;
+            border: 5px solid rgb(139, 224, 238);
+            border-radius: 10px;
+
+
+        }
+
+        header p {
+            font-size: 25px;
+
+            text-align: center;
+
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <marquee width="100%" height="70px" direction="left">
+            <p>WELCOME TO AAP KI DUKAN</p>
+        </marquee>
+    </header>
+    <nav id="bar">
+        <div id="logo">
+            <img src="logo.png" alt="logo" class="src">
+        </div>
+        <ul>
+            <li class="item"><a href="shop.html">Home</a></li>
+            <li class="item"><a href="about.html">About us</a></li>
+
+            <li class="item"><a href="signup.html">Sign up</a></li>
+            <li class="item"><a href="login.html">Login </a></li>
+            <li class="item"><input type="search" placeholder="search"></li>
+        </ul>
+    </nav>
+    <div class="box">
+        <div class="mob1">
+            </p><img src="lapt.jpg">" <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+                dolorem, cupiditate harum dignissimos
+                quis saepe in iusto itaque totam assumenda at a, rerum exercitationem libero?<br>
+                <a href="cart.html"><button type="button">BUY</button> <button type="button">ADD TO CART </button></a>
+        </div><div class="mob1">
+        </p><img src="lapt.jpg">" <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+            dolorem, cupiditate harum dignissimos
+            quis saepe in iusto itaque totam assumenda at a, rerum exercitationem libero?<br>
+            <a href="cart.html"><button type="button">BUY</button> <button type="button">ADD TO CART </button></a>
+    </div><div class="mob1">
+    </p><img src="lapt.jpg">" <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+        dolorem, cupiditate harum dignissimos
+        quis saepe in iusto itaque totam assumenda at a, rerum exercitationem libero?<br>
+        <a href="cart.html"><button type="button">BUY</button> <button type="button">ADD TO CART </button></a>
+</div><div class="mob1">
+</p><img src="lapt.jpg">" <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+    dolorem, cupiditate harum dignissimos
+    quis saepe in iusto itaque totam assumenda at a, rerum exercitationem libero?<br>
+    <a href="cart.html"><button type="button">BUY</button> <button type="button">ADD TO CART </button></a>
+</div><div class="mob1">
+</p><img src="lapt.jpg">" <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+    dolorem, cupiditate harum dignissimos
+    quis saepe in iusto itaque totam assumenda at a, rerum exercitationem libero?<br>
+    <a href="cart.html"><button type="button">BUY</button> <button type="button">ADD TO CART </button></a>
+</div><div class="mob1">
+</p><img src="lapt.jpg">" <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+    dolorem, cupiditate harum dignissimos
+    quis saepe in iusto itaque totam assumenda at a, rerum exercitationem libero?<br>
+    <a href="cart.html"><button type="button">BUY</button> <button type="button">ADD TO CART </button></a>
+</div><div class="mob1">
+</p><img src="lapt.jpg">" <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+    dolorem, cupiditate harum dignissimos
+    quis saepe in iusto itaque totam assumenda at a, rerum exercitationem libero?<br>
+    <a href="cart.html"><button type="button">BUY</button> <button type="button">ADD TO CART </button></a>
+</div><div class="mob1">
+</p><img src="lapt.jpg">" <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+    dolorem, cupiditate harum dignissimos
+    quis saepe in iusto itaque totam assumenda at a, rerum exercitationem libero?<br>
+    <a href="cart.html"><button type="button">BUY</button> <button type="button">ADD TO CART </button></a>
+</div><div class="mob1">
+</p><img src="lapt.jpg">" <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+    dolorem, cupiditate harum dignissimos
+    quis saepe in iusto itaque totam assumenda at a, rerum exercitationem libero?<br>
+    <a href="cart.html"><button type="button">BUY</button> <button type="button">ADD TO CART </button></a>
+</div><div class="mob1">
+</p><img src="lapt.jpg">" <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+    dolorem, cupiditate harum dignissimos
+    quis saepe in iusto itaque totam assumenda at a, rerum exercitationem libero?<br>
+    <a href="cart.html"><button type="button">BUY</button> <button type="button">ADD TO CART </button></a>
+</div><div class="mob1">
+</p><img src="lapt.jpg">" <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+    dolorem, cupiditate harum dignissimos
+    quis saepe in iusto itaque totam assumenda at a, rerum exercitationem libero?<br>
+    <a href="cart.html"><button type="button">BUY</button> <button type="button">ADD TO CART </button></a>
+</div><div class="mob1">
+</p><img src="lapt.jpg">" <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+    dolorem, cupiditate harum dignissimos
+    quis saepe in iusto itaque totam assumenda at a, rerum exercitationem libero?<br>
+    <a href="cart.html"><button type="button">BUY</button> <button type="button">ADD TO CART </button></a>
+</div>
+    </div>
+    <section id="contact">
+        <h1 class="h-conth center">Contact us</h1>
+        <div id="contb">
+            <form>
+                <div class="form">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form">
+                    <label for="name">E-mail:</label>
+                    <input type="email" name="name" id="name" placeholder="Enter your E-mail">
+                </div>
+                <div class="form">
+                    <label for="name">Contact no :</label>
+                    <input type="number" name="name" id="name" placeholder="Enter your contact no">
+                </div>
+                <div class="form">
+                    <label for="name">DOB:</label>
+                    <input type="date" name="name" id="name" placeholder="Enter your DOB">
+
+                </div>
+                <div class="form">
+                    <label for="name">Describe your issue:</label>
+                    <textarea name="name" id="" cols="30" rows="10"></textarea><br>
+
+                </div>
+                <div class="form">
+
+                    <button>SUBMIT</button>
+
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="brand">
+            <img src="tata_bccl.jpg" alt="brand" class="src"> <img src="mobile.png"><img src="sound.png">
+        </div>
+        &copy;copywright2021aapkidukan
+
+    </footer>
+
+</body>
+
+</html>
