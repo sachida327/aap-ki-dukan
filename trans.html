@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        h1 {
+            color: rgb(255, 185, 100);
+        }
+
+        .container {
+            height: 850px;
+            border: 10px solid salmon;
+            border-radius: 5px solid rgb(121, 96, 96);
+            width: 500px;
+            padding: 10px;
+            margin: auto;
+            background-image: url('https://payneteasy.com/static/img/blog/the-comprehensive-guide-to-india%E2%80%99s-e-rupee-initiative/1.jpg');
+
+            display: flex;
+            flex-direction: row;
+            /*intialize dislay flex in cintainer*/
+
+
+            /*flex-direction: row-reverse;
+            flex-direction: column-reverse*/
+            flex-flow: wrap;
+            justify-content: center;
+
+            align-items: center;
+            align-items: stretch;
+
+        }
+
+
+
+
+
+
+        .form input {
+            display: flex;
+            background-color: rgb(195, 233, 170);
+            margin-top: 30px;
+            padding-top: 10px;
+height: 50px;
+width: 300px;
+
+            flex-direction: row;
+            border: 2px solid black;
+            border-radius: 10px solid black;
+        }
+
+        .container p {
+            text-align: center;
+            align-items: center;
+            color: antiquewhite;
+            font-size: 20px;
+
+
+        }
+
+        .form {
+            margin-top: auto a 20px;
+            padding-top: 30px;
+        } #bar {
+            display: flex;
+            align-items: center;
+
+        }
+
+        /*logo and image*/
+        #bar img {
+            height: 60px;
+            margin: 30px 45px;
+        }
+
+        #bar ul {
+            display: flex;
+            flex-direction: row;
+            font-size: 15px;
+
+        }
+
+        #bar::before {
+            content: "";
+            background-color: rgba(0, 0, 0, 0);
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+
+
+        }
+
+        #bar ul li {
+            list-style: none;
+
+            padding: 10px;
+
+
+
+        }
+
+        #bar {
+            position: relative;
+        }
+
+        #bar ul li a {
+            display: flex;
+            padding: 4px 23px;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            border: 3px solid black;
+            border-radius: 10px;
+
+        }
+
+        #bar {
+            position: relative;
+        }
+
+        #bar ul li a:hover {
+
+            background-color: antiquewhite;
+            color: black;
+
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <marquee width="100%" direction="RIGHT" height="100px">
+
+        <h1> WELCOME TO TRANSACTION ISSUE OF AAP KI DUKAN  </h1>
+    </marquee>
+    <nav id="bar">
+        <div id="logo">
+            <img src="logo.png" alt="logo" class="src">
+        </div>
+        <ul>
+            <li class="item"><a href="trans.html">Home</a></li>
+            <li class="item"><a href="about.html">About us</a></li>
+
+            <li class="item"><a href="signup.html">Sign up</a></li>
+            <li class="item"><a href="login.html">Login </a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <p> TRANSACTION ISSUE</p>
+        <form class="form">
+            <input type="text" placeholder="NAME">
+            <input type="date" placeholder="DATE OF TRANSACION">
+            <input type="number" placeholder="NUMBER">
+            <input type="email" placeholder="EMAIL">
+            
+            <input type="number" placeholder="TRANSACION ID"><br>
+            <textarea> DESCRIBE YOUR ISSUE</textarea><br>
+            <button type="button" class="button"> SUBMIT</button>
+        </form>
+
+    </div>
+
+
+    <!--CSS Flexbox Layout Module
+Before the Flexbox Layout module, there were four layout modes:
+
+Block, for sections in a webpage flexbox= flexible+box
+Inline, for text
+Table, for two-dimensional table data
+Positioned, for explicit position of an element
+The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using float or positioning.
+
+-->
+    </div>
+
+</body>
+
+</html>
